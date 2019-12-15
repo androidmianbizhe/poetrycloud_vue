@@ -29,7 +29,7 @@ export default {
       this.name = localStorage.getItem('shiyun_phone')
       this.password = localStorage.getItem('shiyun_pwd')
     }
-    // 自动登录
+    // 自动登录 data
     // 登录
     this.$axios.post('/ssoweb/user/login', QS.stringify({
       'phone_number': this.name,
